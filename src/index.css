@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  background-color: #EAEDED;
+  margin: 0;
+}
+
+@keyframes voice-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 113, 133, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(0, 113, 133, 0.15);
+    transform: scale(1.02);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 113, 133, 0);
+    transform: scale(1);
+  }
+}
+
+.voice-highlight {
+  animation: voice-pulse 0.6s ease-in-out 2;
+  border-color: #007185 !important;
+  outline: 2px solid rgba(0, 113, 133, 0.4) !important;
+  outline-offset: 2px;
+}
+
+.voice-target:focus-within {
+  outline: none;
+}
+
+.prime-badge {
+  font-size: 0.65rem;
+  color: #00A8E1;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
