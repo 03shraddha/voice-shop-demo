@@ -1,4 +1,5 @@
-# voice-shop-demo
+# Control your screen completely without clicking the mouse
+
 
 Shop by talking. No clicking needed.
 
